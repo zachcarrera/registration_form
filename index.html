@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="/register">
+            <div>
+                <label for="firstname">First Name:* </label>
+                <input type="text" name="firstname" id="firstname" required />
+            </div>
+            <br />
+            <div>
+                <label for="lastname">Last Name:* </label>
+                <input type="text" name="lastname" id="lastname" required />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email Address:* </label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <br />
+            <div>
+                <label for="password">Password:* </label>
+                <input type="password" name="password" id="password" required />
+            </div>
+            <br />
+            <div>
+                <label for="confirmPassword">Confirm Password:* </label>
+                <input
+                    type="password"
+                    name="password"
+                    id="confirmPassword"
+                    required
+                />
+            </div>
+            <br />
+            <div>
+                <label for="birthday">Birthday: </label>
+                <input type="date" name="birthday" id="birthday" />
+            </div>
+            <div>
+                <p>Gender Identity:</p>
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="nonbinary" />
+                <label for="nonbinary">Non-binary</label>
+                <input type="radio" name="gender" id="noAnswer" />
+                <label for="noAnswer">I prefer not to answer</label>
+            </div>
+            <br />
+            <label for="description">A short description about myself:</label>
+            <div>
+                <textarea
+                    name="description"
+                    id="description"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+            </div>
+            <br />
+            <div>
+                <label for="language">Favorite Language: </label>
+                <select name="language" id="language">
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c_sharp">C#</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <input type="checkbox" name="updates" id="updates" />
+                <label for="updates">
+                    Yes, I would like to recieve periodic email updates
+                </label>
+            </div>
+            <br />
+            <input type="submit" value="Create Account" />
+            <p>* Indicates a required field</p>
+        </form>
+    </body>
+</html>
